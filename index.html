@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notebook</title>
+
+    <link rel="Stylesheet" href="./CSS/Style.css">
+
+    <link rel="icon" href="Images/angela.png">
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="Button" id="topmost">
+            Home
+        </div>
+        <div class="Button">
+            Diet
+        </div>
+        <div class="Button">
+            Habitat
+        </div>
+    </nav>
+
+    <section>
+        <section class="Left_Panel">
+            <div class="top_profile">
+                <img src="./Images/Curious_George.png" alt="profile picture">
+                <br>
+                <caption>Curious George</caption>
+            </div>
+            <div class="bottom_details">
+                <h1>Pet Stats:</h1>
+                <p class="stats">Breed:</p>
+                <p class="stats">Age:</p>
+                <p class="stats">Favorite Toy:</p>
+                <p class="stats">Average Walk Per Day:</p>
+                <p class="stats">Owner Name:</p>
+            </div>
+
+        </section>
+
+        <section class="Right_Panel">
+            <div class="Intro">
+                <img src="./Images/A.jpeg" alt="main image" width="500px">
+                <div class="text1">
+                <h2>Curious George is the cutest monkey!</h2>
+                <p>Curious George is a sweet African monkey who can't help but run into trouble. George's friend, "The Man in the Yellow Hat," tries very hard to care for George and is always saving the day. The show's themes are about learning, forgiveness and playful curiosity.</p>
+                <p>I repeat "The Man in the Yellow Hat," tries very hard to care for George and is always saving the day.</p>
+                <p>Curious George is a sweet African monkey who can't help but run into trouble. George's friend, "The Man in the Yellow Hat," tries very hard to care for George and is always saving the day. The show's themes are about learning, forgiveness and playful curiosity.</p>
+                <p>I repeat "The Man in the Yellow Hat," tries very hard to care for George and is always saving the day.</p>
+                </div>
+            </div>
+            <div class="Gallery">
+                <h2>A day with George at the park :)</h2>
+                
+                <img src="./Images/1.jpg" height="200px">
+                <img src="./Images/2.jpg" height="200px">
+                <img src="./Images/3.jpeg" height="200px">
+             
+            </div>
+
+        </section>
+    </section>
+
+    <hr size="3" noshade>
+    
+<!--Coursera 1st course starts from here-->
+
+<!-- This is an about LISTs -->
+
+<!-- this is UNORGANIZED list -->
+<ul>Name of the list can go here
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3
+        <ul>
+        <li>subitem 1</li>
+        <li>subitem 2</li>
+        </ul>
+    </li>
+    <li>Item 4</li>
+</ul>
+<!-- this is ORGANIZED list -->
+<ol><h3>Name of the list </h3>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3
+        <ul>
+        <li>subitem 1</li>
+        <li>subitem 2</li>
+        </ul>
+    </li>
+    <li>Item 4</li>
+</ol>
+
+
+<!-- Entities are alternate codes to render special characters. Starts with &, end with ; -->
+<h3>This is a copyright symbol &copy;</h3>
+<!-- to prevent words or phrase from breaking (going into next line) -->
+<p>In this paragraph the last line in bold will not be breaking. Meanwhile we're also witnessing an example of how to use a Span tag. Notice how <span style="font-weight: bold;"> these&nbsp;three&nbsp;words </span> will always stick together.</p>
+
+
+<!-- This is about LINKS -->
+<h3> Links</h3>
+<a href="https://husainzaidi.com/">this is my portfolio website</a>
+<br><br>
+<!-- attribute of target="_blank" will open the link in a new tab -->
+<a href="https://husainzaidi.com/" target="_blank" title="can you see this in the tab?">this will open in new tab always</a>
+<br><br>
+<!-- you can anchor link to an ID on the page -->
+<a href="#topmost">Back to Top!</a>
+<!-- you can also insert div blocks in a tag, eg- link to an image -->
+<a href="https://husainzaidi.com/">
+    <div>
+        <img src="./Images/Screen Shot 2022-04-12 at 10.06.52 PM.png" height="200">
+    </div>
+</a>
+
+<!-- command + / will start comment tag -->
+
+<!-- This is where Angela Yu course starts -->
+
+<hr size="3" noshade>
+
+<!-- Include META tags (in the head) with attributes such as Description, keywords etc to improve the SEO -->
+
+<!-- Text in HTML can also be styled using CSS properties using style attribute -->
+
+<p style="color:blue; font-style: italic; font-weight:bold" >This text is styled in html and it's about TABLES</p>
+
+<!-- This section is about TABLES -->
+<table cellpadding="20"
+        border="1">
+    <thead>
+        <tr>
+            <th>Year</th>
+            <th>Name</th>
+            <th>Generation</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>1965</td>
+            <td>Thomas</td>
+            <td>baby boomer</td>
+        </tr>
+        <tr>
+            <td>1985</td>
+            <td>Brad</td>
+            <td>Gen X</td>
+        </tr>
+        <tr>
+            <td>2015</td>
+            <td>Nicole</td>
+            <td>Gen Z</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<table  border="1"
+        cellpadding="4">
+    <tr>
+        <td>iOS Development </td>
+        <td>★★★</td>
+        
+        <td>Photography</td>
+        <td>★★★★</td>
+    </tr>
+    <tr>
+        <td>Web Development </td>
+        <td>★★★★</td>
+        
+        <td>Painting</td>
+        <td>★★</td>
+    </tr>
+</table>
+<br>
+<table  border="1"
+        cellpadding="4">
+    <tr>
+        <td>
+            <table>
+                <tr>
+                <td>iOS Development </td>
+                <td>★★★</td>
+                </tr>
+                <tr>
+                <td>Photography</td>
+                <td>★★★★</td>
+                </tr>
+            </table>
+        </td>
+
+        <td>
+            <table>
+                <tr>
+                <td>Web Development </td>
+                <td>★★★★</td>
+                </tr>
+                <tr>
+                <td>Painting</td>
+                <td>★★</td>
+                </tr>
+            </table>
+        </td>
+    
+    </tr>
+</table>
+<hr size="3" noshade> 
+
+<!-- this section is about FORMS. Under form container, you create Inputs (text box, checkbox, date picker!, button etc) or labels.
+
+You can also Select the form class, ACTION, method etc attributes-->
+<h3> This section is about FORMS</h3>
+
+    <form class="" action="mailto:hello@husainzaidi.com" method="post">
+        
+        <label>Please input your information</label>
+        <br>
+        <label>First name</label>
+        <input type="text">
+        <br>
+        <label>Last name</label>
+        <input type="text">
+        <br>
+        <label>Email</label>
+        <input type="text" value="only gmail ids">
+        <br>
+        <label>Do you want to subscribe to newsletter?</label>
+        <input type="checkbox">
+        <br>
+        <input type="submit">
+
+    <br><br>
+    Other form input types : 
+    <br><br>
+    <input type="button"> 
+    <input type="checkbox"> 
+    <input type="color">
+    <input type="date"> 
+    <input type="datetime-local"> 
+    <input type="email"> 
+    <input type="file"> 
+    <input type="hidden"> 
+    <input type="image"> 
+    <input type="month"> 
+    <input type="number"> 
+    <input type="password"> 
+    <input type="radio"> 
+    <input type="range"> 
+    <input type="reset"> 
+    <input type="search"> 
+    <input type="submit"> 
+    <input type="tel"> 
+    <input type="text"> 
+    <input type="time"> 
+    <input type="url">
+    <input type="week"> <br> <br>
+
+    </form>
+
+    <hr size="3px" noshade>
+
+    <!-- CSS starts here!!! -->
+
+    <h1>CSS starts here</h1>
+
+    <!-- You can have class selected with STATES like hover, active etc -->
+    
+    <button>Click me</button>
+
+    <!-- using SPAN element you can highlight only certain parts of a word /sentence because it's an INLINE element and not a BLOCK element. -->
+
+    <p>This is wrappen in <span class="span_example">SPAN</span> element.</p>
+
+    <hr>
+
+    <!-- Applying concepts of BOX model, DISPLAY property, and POSITION property -->
+    <div class="relative">
+    <p>This is using Display and RELATIVE position property: </p>
+    <div class="redrelative"></div>
+    <div class="bluerelative"></div>
+    <div class="yellowrelative"></div>
+    </div>  
+
+    <br><br>
+
+    <div class="absolute">
+    <p>This is using Display and RELATIVE position property: </p>
+    <div class="redabsolute"></div>
+    <div class="blueabsolute"></div>
+    <div class="yellowabsolute"></div>
+    </div>
+
+    <br><br>
+
+    <p>This is using Display and STICKY and FIXED position property: </p>
+
+    <div class="stickydiv">   
+        <div class="stickyposition">Sticky position</div>
+    </div>
+
+    <div class="fixposition">Fixed position</div>
+  
+    <hr>
+
+    <!-- This section is about FONTS -->
+    <div class="testing-fonts">
+
+    <p><a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp">Web Safe Fonts</a> are the fonts which most browsers and OS will render correctly.</p>
+
+    </div>
+
+    <p class="em-font">This font is defined in EM units, hence it will dynamically change</p>
+
+    <p class="px-font">This font is defined in PX units, hence it will NOT change upon changing browser settings</p>
+    <br>
+    <hr>
+    <br>
+    <!-- this section is about FLEXBOXES -->
+
+    This is the parent flexbox container
+
+    <div class="flexbox-container"> 
+        <div class="flexbox-item flexbox1">Flexbox item 1</div>
+        <div class="flexbox-item flexbox2">Flexbox item 2</div>
+        <div class="flexbox-item flexbox3">Flexbox item 3</div>
+    </div>
+    <br><br>
+    <hr>
+    <br><br>
+
+    <!-- this section will be about GRIDs -->
+
+    This section will contain Grid examples
+    <br><br>
+    <hr>
+    <br><br>
+
+      <!-- this section has Bootstrap examples -->
+
+    <p>Follow this button for bootstrap examples</p>    
+    <a href="./bootstrap-lessons/my-bootstrap.html"><button>Bootstrap!</button></a>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+</body>
+
+</html>
