@@ -77,10 +77,10 @@
     
 <!--Coursera 1st course starts from here-->
 
-<!-- This is an about LISTs -->
+<!-- This section is about LISTs -->
 
 <!-- this is UNORGANIZED list -->
-<ul>Name of the list can go here
+<ul>This is unordered list
     <li>Item 1</li>
     <li>Item 2</li>
     <li>Item 3
@@ -92,7 +92,7 @@
     <li>Item 4</li>
 </ul>
 <!-- this is ORGANIZED list -->
-<ol><h3>Name of the list </h3>
+<ol><h3>This is ordered list </h3>
     <li>Item 1</li>
     <li>Item 2</li>
     <li>Item 3
@@ -103,6 +103,15 @@
     </li>
     <li>Item 4</li>
 </ol>
+
+<!-- This is Description list -->
+<dl>This is Description list!
+    <dt>This is Term</dt>
+    <dd>this is the description of that term! </dd>
+
+    <dt>This is Term</dt>
+    <dd>this is the description of that term! </dd>
+</dl>
 
 
 <!-- Entities are alternate codes to render special characters. Starts with &, end with ; -->
@@ -140,8 +149,8 @@
 <p style="color:blue; font-style: italic; font-weight:bold" >This text is styled in html and it's about TABLES</p>
 
 <!-- This section is about TABLES -->
-<table cellpadding="20"
-        border="1">
+<table cellpadding="20" border="1">
+        <caption>You can add Caption to tables also</caption>
     <thead>
         <tr>
             <th>Year</th>
@@ -166,7 +175,24 @@
             <td>Nicole</td>
             <td>Gen Z</td>
         </tr>
+        <tr>
+            <td colspan="3">Using 'Colspan' you can merge cells across columns</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Use 'Rowspan' to merge vertically</td>
+            <td>Hello</td>
+            <td>World</td>
+        </tr>
+        <tr>
+            <td>Hey</td>
+            <td>Coder</td>
+        </tr>
     </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">This is footer</td>
+        </tr>
+    </tfoot>
 </table>
 <br>
 <table  border="1"
@@ -358,6 +384,159 @@ You can also Select the form class, ACTION, method etc attributes-->
     <hr>
     <br><br>
 
+    <hr size="3" noshade=>
+    
+    <!-- FREECODECAMP video tutorial starts here! 
+    
+    This section will only contain new topics here..or things I wanna practice just writing again, or even new things I'm learning about the same topic i might have touched on before. -->
+
+    <p>Putting <em>emphasis</em> on something like <em>this</em>using em tag will make it italics by default. Then we can change it later in CSS ;) but <strong>to emphasize something even more</strong> , we cna use strong tag! 
+    </p>
+    <p>the tag &nbsp in between words can have them stick together always but also it can create large space like &nbsp; &nbsp; &emsp13; this!</p>
+    
+    <p>some more symboles: &lt; &copy; &rtri; &gt; </p>
+
+    <p>Using the abbr tag, this is how can you add hover abbreviation: <abbr title="United States of America">USA</abbr> </p>
+    <p>there is a dedicated ADDRESS tag also:</p>
+    <address>5/5 NUEPA, NCERT campus
+        <br> New Delhi, India
+    </address>
+
+    <figure>This block of text is written under FIGURE tag, which is why it's indedntedd! and a CODE tag, under which you can write code snippets!
+        <br> <code>This is udner CODE tag</code> <br>
+        However it would not turn normal tags to code, you'l have to use symbols like &lt; and &gt;
+    </figure>
+    <br><br>
+    <hr>
+    <br><br>
+    <details>
+        <summary> Wow! HTML has a default <mark> accordian! </mark>This is all under DETAILS tag.</summary>
+        <p>while the title above is in nested SUMMARY tag!</p>
+    </details>  
+    <br><br>
+    <hr>
+    <br><br>
+
+    <!-- This section is about IMAGES!! -->
+    <div>
+        This image has <strong>Eager</strong> loading, which is default. 
+        <figure>
+            <img src="./Images/caribbean.jpg" alt="" width="400" height="225" loading="eager">
+            <figcaption>This image is properly listed under figure tag, with figcaption for caption</figcaption>
+        </figure>
+        
+
+        <br><br><br><br><br><br><br><br><br><br>
+        <p>all this space was created using br*20 (br tag multiplied by n)</p>
+        <br><br><br><br><br><br><br><br><br><br>
+
+        While this image has <strong>lazy loading! </strong> 
+        <img src="./Images/vacation.jpg" alt="" width="400" height="267" loading="lazy">
+        <br><br><br>
+        <p>A good tip is to inset a placeholder image thorugh links when you're not sure of the final image to put. </p>
+        <img src="http://via.placeholder.com/640x360" alt="">
+    </div>
+
+    <br><br>
+    <hr>
+    <br><br>
+    <!-- Let's make FORMS again, properly -->
+
+    <article>
+        <h2>Say hello!</h2>
+        <p>I would love to chat about tech!</p>
+
+        <form action="https://httpbin.org/get" method="get">
+
+            <fieldset>
+                <legend>About You</legend>
+                <div class="form-items">
+                    <label for="firstName"> Your first name:</label>
+                    <!-- Pay close attention to all these ATTRIBUTES below -->
+                    <input type="text" name="firstName" id="firstName" placeholder="John" autocomplete="on" required autofocus>
+                </div>
+                <div class="form-items">
+                    <label for="lastName"> Your last name:</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Smith" autocomplete="on" required>
+                </div>
+                <div class="form-items">
+                    <label for="phone"> Number:</label>
+                    <!-- Pay close attention to all these ATTRIBUTES below -->
+                    <input type="tel" name="phone" id="phone" placeholder="555-555-5555" autocomplete="on" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </div>
+                <div class="form-items">
+                    <label for="decade"> Favorite decade:</label>
+                    <!-- Pay close attention to all these ATTRIBUTES below. This is for having an incremental select input -->
+                    <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1990">
+                </div>
+                <div class="form-items">
+                    <label for="billionaire"> Favorite billionaire:</label>
+                    <!-- Pay close attention to all these ATTRIBUTES below. this is for dropdown select -->
+                    <select name="billionaire" id="billionaire">
+                        <optgroup label="Awesome people">
+                        <option value="Musk">Elon Musk</option>
+                        <option value="Bill Gates">Bill Gates</option>
+                        </optgroup>
+                        <optgroup label="Assholes">
+                        <option value="Zuckerberg">Mark Zuckerberg</option>
+                        <option value="Bezos">Jeff Bezos</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="form-items">
+                    <label for="coffee"> Favorite coffee:</label>
+                    <!-- Pay close attention to all these ATTRIBUTES below. This is for writing but with dropdown also -->
+                    <input type="text" name="coffee" id="coffee" list="coffee-list">
+                        <datalist id="coffee-list">
+                            <option value="Coffee"></option>
+                            <option value="Espresso"></option>
+                            <option value="Latte"></option>
+                            <option value="Americano"></option>
+                            <option value="Cappuccino"></option>
+                        </datalist>
+                </div>
+            </fieldset>
+            <br>
+            <!-- This is for single select radio button (have to have same ID) -->
+            <fieldset>
+                <legend>What is your favorite food?</legend>
+
+                <div><input type="radio" name="food" id="tacos" value="tacos"><label for="tacos">Tacos</label></div>
+                <div><input type="radio" name="food"><label>Pizza</label></div>
+                <div><input type="radio" name="food"><label>Sushi</label></div>
+            </fieldset>
+            <br>
+            <!-- This is for multi checkbox -->
+            <fieldset>
+                <legend>Do you have pets?</legend>
+
+                <div><input type="checkbox" name="pets" id="dog" value="dog"> <label for="dog">Dog</label></div>
+                <div><input type="checkbox" name="pets" id="cat" value="cat"> <label for="cat">Cat</label></div>
+                <div><input type="checkbox" name="pets" id="other" value="other"> <label for="other">Other</label></div>
+            </fieldset>
+            <br>
+            <!-- This is for large free input field -->
+            <fieldset>
+                <legend>Send me a note</legend>
+
+                <div><label for="message">Your message:</label></div>
+                <div><textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea></div>
+            </fieldset>
+            <br>
+            <button type="submit">Send using get request</button>
+
+            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Sending using Post</button>
+            
+            <button type="reset">Reset</button>
+        </form>
+    </article>
+
+
+
+
+    <br><br>
+    <hr>
+    <br><br>
 </body>
 
 </html>

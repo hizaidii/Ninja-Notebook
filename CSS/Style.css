@@ -265,3 +265,7 @@ body {
     /* align-self applies a local align logic to the object */
     align-self: flex-end;
 }
+
+.form-items {
+    min-height: 40px;
+}
