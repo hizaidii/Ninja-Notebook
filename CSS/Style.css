@@ -3,8 +3,14 @@
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap);
 
 * {
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     font-family: 'Inter', sans-serif;
+    /* margin: 0;
+    padding: 0;
+    box-sizing: border-box; */
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -276,6 +282,18 @@ body {
 }
 
 /* FROM HERE STARTS THE FREECODECAMP CSS TUTORIAL!  */
+/* FROM HERE STARTS THE FREECODECAMP CSS TUTORIAL!  */
+/* FROM HERE STARTS THE FREECODECAMP CSS TUTORIAL!  */
+/* FROM HERE STARTS THE FREECODECAMP CSS TUTORIAL!  */
+
+.freecodecamp {
+    background-color: lightgray;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
 
 .ghodey {
     font-size: 22px;
@@ -345,21 +363,199 @@ body {
 }
 
 /* THIS SHOWS STYLING LINKS */
-a {
+.styledLink {
     text-decoration: none;
     font-weight: bold;
     color: rgb(104, 104, 4);
 }
 
-a:visited {
+.styledLink:visited {
     color: rgb(46, 167, 189);
 }
 
-a:hover {
+.styledLink:hover {
     color: rgb(92, 104, 68);
     background-color: rgb(192, 172, 134);
 }
 
 a:active {
     color: orangered;
+}
+
+/* THIS SECTION IS ALL ABOUT DISPLAY : BLOCK, INLINE, INLINE-BLOCK */
+
+.blocks {
+    display: block;
+    background-color: aqua;
+    width: 40%;
+    height: 20vh;
+    margin: 2rem;
+}
+
+.inlines {
+    display: inline;
+    background-color: blueviolet;
+    width: 500px;
+    height: 100px;
+    margin: 2rem;
+}
+
+
+.inlineBlocks {
+    display: inline-block;
+    background-color: chocolate;
+    width: 500px;
+    height: 100px;
+    margin: 2rem;
+}
+
+/* FLOAT PROPERTY starts here */
+
+.float {
+    height: 12vw;
+    width: 12vw;
+    background-color: cornflowerblue;
+}
+.left {
+    float: left;
+    margin-right: 1rem;
+}
+.right {
+    float: right;
+    margin-left: 1rem;
+}
+
+.flowRoot {
+    background-color: bisque;
+    border: 1px solid #333;
+    display: flow-root;
+}
+
+/* this is about COLUMNS! */
+.columns {
+    columns: 4 250px;
+    column-rule: 2px solid #333;
+    column-gap: 3rem;
+    break-inside: avoid;
+}
+
+.quote {
+    font-size: 2rem;
+    text-align: center;
+    column-span: all;
+}
+
+/* this section is about POSITION PROPERTY!! */
+
+.outerContainer {
+    border: 2px solid black;
+    height: 80vh;
+    width: 50vw;
+    margin: 0 auto;
+    position: relative;
+}
+
+.innerContainer {
+    border: 2px dashed black;
+    height: 60vh;
+    width: 30vw;
+    margin: 100px auto;
+    /* position: relative; */
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    padding: 1rem;
+}
+/* ABSOLUTE needs its parent to have RELATIVE property, otherwise it will be relative to WORLD/browser */
+.absolutes {
+    background-color: cadetblue;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+}
+/* will be positioned RELATIVE to parent containr, regardless of their position property */
+.relatives {
+    background-color: darkslategrey;
+    color: white;
+    position: relative;
+    top: 100px;
+    left: 300px;
+}
+/* FIXED will always be fixed w.r.t the WORLD */
+.fixeds {
+    background-color: lightcoral;
+    position: fixed;
+    bottom: 150px;
+    right: 75px;
+}
+/* STICKY is positioned w.r.t to WORLD coordinates but will stay within parent container always and will stick to WORLD coordinates. */
+.stickys {
+    background-color: mistyrose;
+    position: sticky;
+    top: 100px;
+    left: 1200px;
+}
+
+.statics {
+    background-color: white;
+}
+
+.spacer {
+    min-height: 10vh;
+}
+/* header and footer */
+.fixedFooter {
+    background-color: wheat;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+/* this section is about DISPLAY: FLEX property! */
+
+.flexContainer {
+    border: 2px solid black;
+    width: 70vw;
+    height: 50vh;
+    /* margin-inline: auto; */
+    margin: 20px auto 100px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-content: center;
+    
+}
+
+.flexItem {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexContainer2 {
+    border: 2px solid black;
+    width: 70vw;
+    height: 50vh;
+    /* margin-inline: auto; */
+    margin: 20px auto 100px auto;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    align-content: space-evenly;
+    
 }

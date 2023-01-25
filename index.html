@@ -342,7 +342,7 @@ You can also Select the form class, ACTION, method etc attributes-->
         <div class="stickyposition">Sticky position</div>
     </div>
 
-    <div class="fixposition">Fixed position</div>
+    <!-- <div class="fixposition">Fixed position</div> -->
   
     <hr>
 
@@ -393,6 +393,8 @@ You can also Select the form class, ACTION, method etc attributes-->
     <!-- FREECODECAMP video tutorial starts here! 
     
     This section will only contain new topics here..or things I wanna practice just writing again, or even new things I'm learning about the same topic i might have touched on before. -->
+
+    <h2 class="freecodecamp">FreeCodeCamp tutorial starts here..</h2>
 
     <p>Putting <em>emphasis</em> on something like <em>this</em>using em tag will make it italics by default. Then we can change it later in CSS ;) but <strong>to emphasize something even more</strong> , we cna use strong tag! 
     </p>
@@ -579,6 +581,8 @@ You can also Select the form class, ACTION, method etc attributes-->
         } <br>
         (Use this * class with these properties to CSS Reset before any project)
         <br><br>
+        html {scroll-behavior: smooth;} (use this prop to smoothly scroll to anchor links)
+        <br><br>
         outline: 4px solid purple;<br>
         outline-offset: 5px;<br>
         (outline property - draws outline outside of border)
@@ -591,6 +595,16 @@ You can also Select the form class, ACTION, method etc attributes-->
         word-spacing: <br>
         font-style: italics; <br>
         font-family: arial, helvetica, sans-serif; <br>
+        (for editing the text) 
+        <br><br>   
+        list-style-type: upper-roman; <br>
+        HTML ->  &lt;ol start="3" reversed&gt; <br>
+        list-style-position: outside; <br>
+        list-style-image: url('....') <br>
+        li:nth-child(2/even) {} [to only change styling of 2nd/even item(s) in the list] <br>
+        li::marker {content: ..} [to make changes to markers/bullets independently. You can use SVGs using the 'CONTENT' property]
+        (list editing options)
+
 
        
     
@@ -598,16 +612,144 @@ You can also Select the form class, ACTION, method etc attributes-->
 
     <br><br>
     <div class="containers">
-        <a href="https://www.google.com/">This is a link. Click me!</a> <br> 
-        <a href="https://www.instagram.com/">This is another link. Long hold me!</a> <br>
-        <a href="https://www.facebook.com/">DON'T click on me!</a>
+        <a class="styledLink" href="https://www.google.com/">This is a link. Click me!</a> <br> 
+        <a class="styledLink" href="https://www.instagram.com/">This is another link. Long hold me!</a> <br>
+        <a class="styledLink" href="https://www.facebook.com/">DON'T click on me!</a>
+    </div>
+    <br><br>
+    <hr>
+    <br><br>
+    <h3>This section is about DISPLAY property (blocks, inline, inline-blocks, and none)</h3>
+    <div class="blocks"> 
+        this is Block element
+    </div>
+    
+    <div class="blocks"> 
+        this is Block element
+    </div>
+
+    <br><br>
+
+    <div class="inlines"> 
+        this is Inline element
+    </div>
+    
+    <div class="inlines"> 
+        this is Inline element
+    </div>
+
+    <br><br>
+
+    <div class="inlineBlocks"> 
+        this is Inline Block element
+    </div>
+    
+    <div class="inlineBlocks"> 
+        this is Inline Block element
     </div>
     <br>
-    hello yoy oo
+    <br><br>
+    <hr>
+    <br><br>
+    <h3>This section is about FLOAT property</h3>
+    <div>
+        <div class="float left">Floating Left Element</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ad illo blanditiis ducimus dicta magni voluptatem tempore iusto reiciendis iure voluptatibus odio, totam doloremque veritatis numquam esse repellendus, eaque est.
+        Quae nesciunt rem non quia quo facere id modi rerum nobis ducimus quidem, natus nostrum sint sapiente vitae perferendis eum fugit quas voluptatum officiis esse qui iure quam libero! Fuga!
+        Illo voluptates iure consequatur eaque reiciendis molestias quis tempore alias hic, blanditiis ab quam esse non deserunt at nesciunt et commodi deleniti est, porro maiores sit ducimus, ea officiis. Tenetur.</p> 
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ad illo blanditiis ducimus dicta magni voluptatem tempore iusto reiciendis iure voluptatibus odio, totam doloremque veritatis numquam esse repellendus, eaque est.
+        Quae nesciunt rem non quia quo facere id modi rerum nobis ducimus quidem, natus nostrum sint sapiente vitae perferendis eum fugit quas voluptatum officiis esse qui iure quam libero! Fuga!
+        Illo voluptates iure consequatur eaque reiciendis molestias quis tempore alias hic, blanditiis ab quam esse non deserunt at nesciunt et commodi deleniti est, porro maiores sit ducimus, ea officiis. Tenetur.</p> 
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ad illo blanditiis ducimus dicta magni voluptatem tempore iusto reiciendis iure voluptatibus odio, totam doloremque veritatis numquam esse repellendus, eaque est.Quae nesciunt rem non quia quo facere id modi rerum nobis ducimus quidem, natus nostrum sint sapiente vitae perferendis eum fugit quas voluptatum officiis esse qui iure quam libero! Fuga! Illo voluptates iure consequatur eaque reiciendis molestias quis tempore alias hic, blanditiis ab quam esse non deserunt at nesciunt et commodi deleniti est, porro maiores sit ducimus, ea officiis. Tenetur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ad illo blanditiis ducimus dicta magni voluptatem tempore iusto reiciendis iure voluptatibus odio, totam doloremque veritatis numquam esse repellendus, eaque est.Quae nesciunt rem non quia quo facere id modi rerum nobis ducimus quidem, natus nostrum sint sapiente vitae perferendis eum fugit quas voluptatum officiis esse qui iure quam libero! Fuga! Illo voluptates iure consequatur eaque reiciendis molestias quis tempore alias hic, blanditiis ab quam esse non deserunt at nesciunt et commodi deleniti est, porro maiores sit ducimus, ea officiis. Tenetur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ad illo blanditiis ducimus dicta magni voluptatem tempore iusto reiciendis iure voluptatibus odio, totam doloremque veritatis numquam esse repellendus, eaque est.Quae nesciunt rem non quia quo facere id modi rerum nobis ducimus quidem, natus nostrum sint sapiente vitae perferendis eum fugit quas voluptatum officiis esse qui iure quam libero! Fuga! Illo voluptates iure consequatur eaque reiciendis molestias quis tempore alias hic, blanditiis ab quam esse non deserunt at nesciunt et commodi deleniti est, porro maiores sit ducimus, ea officiis. Tenetur.</p> 
+        
+        <section class="flowRoot"> 
+        <div class="float right">Floating Right Element</div>
+        <p>THE ONLY REASON WHY THIS CONTAINER IS NOT HUGGING THE CONTENT AND OVERLAPPING THE FLOAT BOX IS BECAUSE OF A DISPLAY PROPERTY FLOW-ROOT</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ad illo blanditiis ducimus dicta magni voluptatem tempore iusto reiciendis iure voluptatibus odio, totam doloremque veritatis numquam esse repellendus, eaque est.Quae nesciunt rem non quia quo facere id modi rerum nobis ducimus quidem, natus nostrum sint sapiente vitae perferendis eum fugit quas voluptatum officiis esse qui iure quam libero! Fuga! Illo voluptates iure consequatur eaque reiciendis molestias quis tempore alias hic, blanditiis ab quam esse non deserunt at nesciunt et commodi deleniti est, porro maiores sit ducimus, ea officiis. Tenetur.</p>
+       
+         </section>
+    </div>
+    <br><br>
+    <hr>
+    <br><br>
+    
+
+    <h3>This section is about COLUMNS property</h3>
+
+    <div class="columns">
+    <P><span>Use <strong>BREAK-INSIDE: AVOID </strong> property to avoid splitting divs and other elemnts inside from one column to the other!! <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta perspiciatis repellendus non beatae nulla! Aspernatur, ea. Laudantium, tempora? Officia natus eos perspiciatis! Corrupti aliquid asperiores illo expedita facere praesentium neque.</span><span>Dolorem corrupti porro cumque ipsum iusto. Praesentium sequi id inventore reprehenderit quasi et distinctio recusandae laborum, nam quia adipisci veniam eius debitis quod velit unde ab deserunt vitae quo? Nulla!</span><span>Rem similique, eius voluptatum doloribus odit numquam, architecto perspiciatis, dolor atque cumque enim at labore voluptatem voluptas. Eum, magnam quo voluptates pariatur architecto ab voluptas non dolorem temporibus! Iure, aspernatur?</span><span>Assumenda, vero eos libero deleniti autem ducimus porro, ipsa dolore dolorem aliquid, obcaecati reprehenderit. Ipsa magnam debitis impedit. Hic recusandae accusantium ea expedita dolor voluptatem dolores, dignissimos inventore. Nam, earum.</span><span>Ratione minima, atque non iure hic est exercitationem architecto nihil quasi, rem maiores ab. Suscipit fugiat cupiditate, vero adipisci ipsum ratione sit modi necessitatibus nam similique vitae et harum ea.</span><span>Eveniet, sed eius ipsum quos dolor, molestias amet tempore recusandae voluptatem magni aspernatur accusamus modi architecto quas, ex explicabo? Deleniti repellat dolor id suscipit perspiciatis iusto voluptates exercitationem dolorum delectus.</span><span>Magni aliquam, repellendus quibusdam molestiae et possimus iste facere architecto ipsum veniam ratione distinctio est hic consequuntur nulla quidem earum labore soluta maiores quis sapiente dolorem! Animi voluptatum recusandae dolor?</span><span>Laborum nostrum, quod corrupti ducimus ad hic inventore delectus assumenda non officia vel sed soluta quasi aperiam illum accusantium excepturi dolore provident omnis beatae? Nisi culpa reprehenderit soluta fugiat eveniet?</span><span>Autem nesciunt eligendi dicta minima eum cum officiis deserunt, ea consequatur nemo vero, soluta facere saepe suscipit impedit dolores error fugit facilis libero. Porro, totam harum nulla cum aut ad.</span><span>Tempore error perspiciatis qui quasi praesentium ullam non optio eveniet accusamus velit rerum, veniam ipsum similique, expedita, omnis eius doloremque! Consequatur iste id beatae laudantium iusto ratione aliquam aliquid corporis!</span></P>
+    <p class="quote">HOW YOU DOIN'?? ;) -Joey Tribbiani</p>
+    <P><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptas modi dolorum ex dolorem sed iusto, asperiores, natus corrupti eius magni quasi perspiciatis fugit mollitia adipisci eligendi rerum numquam fugiat.</span><span>Aperiam ipsa voluptas autem unde blanditiis totam dolore repudiandae ea assumenda dicta facere hic beatae aliquid libero deserunt voluptates minima, ipsam quod repellat accusamus cum architecto, pariatur dolorem. Consectetur, nisi?</span><span>Qui magni at atque doloremque, ipsum error quae dicta maxime rerum. Eligendi repellendus, eveniet, id ut non impedit dicta et molestiae voluptatum, sunt nisi quaerat vitae fugit accusantium odit aperiam.</span><span>Quae saepe repellendus corrupti ipsam officiis quam fugiat, qui molestiae ad, earum consequuntur? Inventore magnam perspiciatis molestias aliquid magni, obcaecati est rerum, quaerat accusantium adipisci dolorum! Nesciunt tempore quasi veniam!</span><span>Tenetur est consectetur illo officia quasi cum, id fuga ipsum numquam quo earum ipsam aspernatur veniam laudantium ipsa illum rerum a, aliquam eveniet tempore molestiae nostrum esse! Nisi, consequatur amet.</span><span>Vero repellendus consequatur ad nisi doloremque cum eligendi, tempora suscipit sequi perferendis earum laborum sunt ab aperiam unde? Ratione quibusdam error earum perspiciatis porro minima pariatur voluptates optio cum similique?</span><span>Possimus corporis optio dolores harum at et suscipit! Molestiae eligendi dignissimos blanditiis distinctio quis sed a. Incidunt, consectetur in eligendi maxime accusamus cumque ipsum, at quas ipsam adipisci error illum!</span><span>Voluptatibus, quam culpa! Expedita rem labore quidem? Voluptatem incidunt sint aperiam, molestias corrupti aliquam numquam optio quidem commodi corporis dolorum nulla mollitia id hic illo quia quod provident debitis. Temporibus?</span><span>Repudiandae eum consequatur minima ab distinctio magnam ratione nam iste totam assumenda ullam reiciendis officia culpa nemo, hic impedit mollitia, natus recusandae sint voluptas optio. Aliquam totam quod impedit assumenda?</span><span>Totam esse quasi reprehenderit magnam voluptatum nihil amet quaerat dolores fugiat molestiae. Iusto autem rem ex quisquam quibusdam sit? Aperiam ipsa quam nostrum enim aspernatur. Nam debitis saepe numquam quibusdam!</span></P>
+    </div>  
+    <br><br>
+    <hr>
+    <br><br>
+    <h3>this section is about POSITION property</h3>
+        <div class="outerContainer">
+            <div class="innerContainer">
+                <!-- <div class="box statics">Static</div> -->
+                <div class="box absolutes">Absolute</div>
+                <div class="box relatives">Relative</div>
+                <a  href="#bottom"><div class="box fixeds">Fixed</div></a>
+                <div class="box stickys">Sticky</div>
+
+            </div>
+        </div>
+      
+
+    <!-- <br><br>
+    <hr>
+    <br><br> -->
+    <footer class="fixedFooter">This is a fixed footer. 
+        <br><br> &copy; Husain Zaidi
+    </footer>
+    <br><br>
+    <hr>
+    <br><br>
+    <h3>This section is about Display: FLEX property</h3>
+
+    <p>Test these out by shrinking the browser size</p>
+
+    <p style="text-align: center;">display: flex; |
+        justify-content: center; |
+        flex-drection: row (default) |
+        align-items: center; |
+        gap: 1rem; |
+        flex-wrap: wrap; |
+        align-content: center;</p>
+
+    <div class="flexContainer">
+        <div class="flexItem">1</div>
+        <div class="flexItem">2</div>
+        <div class="flexItem">3</div>
+        <div class="flexItem">4</div>
+        <div class="flexItem">5</div>
+    </div>
+    <br>
+    <p style="text-align: center;">display: flex; |
+        justify-content: space-around; |
+        flex-drection: column-reverse |
+        align-items: center; |
+        flex-wrap: wrap-reverse; |
+        align-content: space-evenly;</p>
+
+    <div class="flexContainer2">
+        <div class="flexItem">1</div>
+        <div class="flexItem">2</div>
+        <div class="flexItem">3</div>
+        <div class="flexItem">4</div>
+        <div class="flexItem">5</div>
+        <div class="flexItem">6</div>
+        <div class="flexItem">7</div>
+    </div>
 
     <br><br>
     <hr>
     <br><br>
+    <div class="spacer"></div>
+    <a id="bottom"></a>
 </body>
 
 </html>
